@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+:root{
+    --color1: #3F2E3E;
+    --color2: #9D342F;
+    --color3: #FE592B;
+    --color4: #F3B95E;
+    --color5: #F8F7E9;
+    --color6: ;
+    --letter: "Tilt Prism", serif;
+}
+
+@media screen and (min-width: 792px) and (max-width: 992px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header .burguer{
+        display: none;
+    }
+
+    header .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-right: 10px;
+    }
+
+    header .menu a{
+        background-color: var(--color3);
+        border-radius: 40px;
+        margin-left: 15px;
+        padding: 5px;
+        border: none;
+    }
+
+    header .menu a:hover{
+        background-color: var(--color5);
+        color: var(--color1);
+        text-shadow: none;
+        transition: 1s;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header .burguer{
+        display: none;
+    }
+
+    header .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-right: 10px;
+    }
+
+    header .menu a{
+        background-color: var(--color3);
+        border-radius: 40px;
+        margin-left: 15px;
+        padding: 5px;
+        border: none;
+    }
+
+    header .menu a:hover{
+        background-color: var(--color5);
+        color: var(--color1);
+        text-shadow: none;
+        transition: 1s;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header .burguer{
+        display: none;
+    }
+
+    header .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-right: 10px;
+    }
+
+    header .menu a{
+        background-color: var(--color3);
+        border-radius: 40px;
+        margin-left: 15px;
+        padding: 5px;
+        border: none;
+    }
+
+    header .menu a:hover{
+        background-color: var(--color5);
+        color: var(--color1);
+        text-shadow: none;
+        transition: 1s;
+    }
+
+}

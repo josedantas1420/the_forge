@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+:root{
+    --color1: #3F2E3E;
+    --color2: #9D342F;
+    --color3: #FE592B;
+    --color4: #F3B95E;
+    --color5: #F8F7E9;
+    --color6: ;
+    --letter: "Tilt Prism", serif;
+}
+
+body{
+    background-color: var(--color5);
+}
+
+header{
+    display: grid;
+    grid-template-areas: 
+    'logomarca burguer'
+    'menu menu'
+    ;
+    align-items: center;
+    background-color: var(--color3);
+    color: var(--color5);
+    text-shadow: 2px 2px 2px var(--color2);
+}
+
+header .logomarca{
+    grid-area: logomarca;
+    font-size: 2.5rem;
+    color: var(--color5);
+    text-shadow: 2px 2px 2px var(--color2);
+    padding: 10px;
+    height: 80px;
+
+    display: flex;
+    align-items: start;
+}
+
+header .logomarca .img{
+    height: 100%;
+    margin-right: 8px;
+}
+
+header .logomarca .texto{
+    font-family: var(--letter);
+}
+
+header .logomarca .img img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+header .burguer{
+    grid-area: burguer;
+    justify-self: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .menu{
+    display: none;
+    grid-area: menu;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+header .menu a{
+    border-bottom: 1px solid var(--color2);
+}
+
+header .menu a:hover{
+    color: var(--color4);
+}
+
+main{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/fundo.jpg);
+    background-position: left top;
+    background-size: cover;
+    height: 800px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.section1{
+    max-width: 700px;
+    margin: auto;
+}
+
+.section1_title{
+    color: var(--color5);
+    font-weight: 700;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 150px 20px 0 20px;
+}
+
+.section1_content{
+    color: var(--color5);
+    text-align: justify;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.section1_button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section1_button_link-contato_span-pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    background-color: var(--color3);
+    padding: 15px;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.section1_button_link-contato_span-pai:hover{
+    width: 230px;
+    background-color: var(--color2);
+}
+
+.section1_button .section1_button_link-contato_span-pai_span1{
+    color: var(--color5);
+    font-weight: bold;
+}
+
+.section1_button .material-symbols-outlined{
+    background-color: var(--color5);
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 7px;
+}
