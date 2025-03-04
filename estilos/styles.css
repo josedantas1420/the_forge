@@ -1,25 +1,31 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+
+:root {
     --color1: #3F2E3E;
     --color2: #9D342F;
     --color3: #FE592B;
     --color4: #F3B95E;
     --color5: #F8F7E9;
-    --color6: ;
-    --letter: "Tilt Prism", serif;
+    --color6: #EF6626;
+    --color7: #EC9C2A;
+    --color9: #30393F;
+    --letter1: "Tilt Prism", serif;
+    --letter2: "Roboto", serif;
+
 }
 
-body{
+body {
     background-color: var(--color5);
 }
 
-header{
+header {
     display: grid;
-    grid-template-areas: 
-    'logomarca burguer'
-    'menu menu'
+    grid-template-areas:
+        'logomarca burguer'
+        'menu menu'
     ;
     align-items: center;
     background-color: var(--color3);
@@ -27,7 +33,7 @@ header{
     text-shadow: 2px 2px 2px var(--color2);
 }
 
-header .logomarca{
+header .logomarca {
     grid-area: logomarca;
     font-size: 2.5rem;
     color: var(--color5);
@@ -39,56 +45,56 @@ header .logomarca{
     align-items: start;
 }
 
-header .logomarca .img{
+header .logomarca .img {
     height: 100%;
     margin-right: 8px;
 }
 
-header .logomarca .texto{
+header .logomarca .texto {
     font-family: var(--letter);
 }
 
-header .logomarca .img img{
+header .logomarca .img img {
     height: 100%;
     border-radius: 50%;
 }
 
-header .burguer{
+header .burguer {
     grid-area: burguer;
     justify-self: right;
     padding: 10px;
     cursor: pointer;
 }
 
-header .menu{
+header .menu {
     display: none;
     grid-area: menu;
     flex-flow: column nowrap;
     text-align: center;
 }
 
-header .menu a{
+header .menu a {
     border-bottom: 1px solid var(--color2);
 }
 
-header .menu a:hover{
+header .menu a:hover {
     color: var(--color4);
 }
 
-main{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/fundo.jpg);
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/fundo.jpg);
     background-position: left top;
     background-size: cover;
     height: 800px;
     font-family: 'DM Sans', sans-serif;
 }
 
-.section1{
+.section1 {
     max-width: 700px;
     margin: auto;
 }
 
-.section1_title{
+.section1_title {
     color: var(--color5);
     font-weight: 700;
     font-size: 1.8em;
@@ -96,21 +102,21 @@ main{
     padding: 150px 20px 0 20px;
 }
 
-.section1_content{
+.section1_content {
     color: var(--color5);
     text-align: justify;
     padding: 20px;
     margin-top: 20px;
 }
 
-.section1_button{
+.section1_button {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
 }
 
-.section1_button_link-contato_span-pai{
+.section1_button_link-contato_span-pai {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,17 +128,17 @@ main{
     transition: .3s;
 }
 
-.section1_button_link-contato_span-pai:hover{
+.section1_button_link-contato_span-pai:hover {
     width: 230px;
     background-color: var(--color2);
 }
 
-.section1_button .section1_button_link-contato_span-pai_span1{
+.section1_button .section1_button_link-contato_span-pai_span1 {
     color: var(--color5);
     font-weight: bold;
 }
 
-.section1_button .material-symbols-outlined{
+.section1_button .material-symbols-outlined {
     background-color: var(--color5);
     border-radius: 50%;
     padding: 5px;
